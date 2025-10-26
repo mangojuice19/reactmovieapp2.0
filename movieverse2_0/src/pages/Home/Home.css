@@ -1,0 +1,78 @@
+
+.hero{
+    position:relative;
+}
+
+.banner-img{
+    width:100%;
+    mask-image: linear-gradient(to left, transparent, black 25%);
+    -webkit-mask-image: linear-gradient(to left, transparent, black 25%);
+}
+
+.hero-caption{
+    position: absolute;
+    width: 100%;           /* Adjust width for better sizing */
+    padding-left: 6%;
+    bottom: 0;          /* Move up from the bottom for better visibility */}
+
+.caption-img{
+    width:100%;
+    max-width: 500px;
+    margin-bottom:25px;
+}
+
+.hero-caption p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.hero-buttons{
+    display:inline-flex;
+    gap: 16px; /* reduced gap between buttons */
+    margin-bottom: 80px; /* reduced bottom spacing so hero content is tighter */
+    align-items: center;
+}
+
+.hero-buttons .btn{
+    background: white(252, 84, 84);
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: rgba(243, 14, 14, 0.8); /* Added hover effect */
+    padding: 12px 24px;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.hero-buttons .dark-btn{
+    color: white;
+    background: rgba(109, 109, 110, 0.7); /* Added transparent effect */
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dark-btn:hover{
+    background: rgba(109, 109, 110, 0.9);
+    padding: 10px 22px;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.more-cards{
+    padding-left: 4%; /* reduced left offset so cards sit closer to hero content */
+}

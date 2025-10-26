@@ -1,0 +1,45 @@
+.titlecards {
+  margin-top: 50px;
+  margin-bottom: 30px;;
+}
+
+/* Only scale the image inside the card being hovered - avoids affecting siblings */
+.card-list .card img{
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.card-list .card:hover img{
+  transform: scale(1.05);
+  z-index: 2; /* lift hovered card visually */
+}
+
+.title-cards h2 {
+  margin-bottom: 8px;
+}
+
+.card-list{
+    display: flex;
+    gap: 17px;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.card-list img{
+    width:250px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.card-list .card{
+    position: relative;
+}
+
+.card-list .card p{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+}
